@@ -1,3 +1,4 @@
+import Links from "./Links";
 
 
 
@@ -5,7 +6,10 @@ const About =()=>{
 
     return(
         <>
-          <h2>This is my About page</h2>
+          <div className= "about">
+              <Links/>
+              <h2 id="testinT">This is my About page</h2>
+          </div>
         </>
     )
 }

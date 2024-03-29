@@ -2,7 +2,9 @@
 
 import { Link } from "react-router-dom";
 
+import Img from "../../../assets/p3.jpg"
 
+import "./Links.css"
 
 const Links =()=>{
 
@@ -10,18 +12,23 @@ const Links =()=>{
         <>
          <div className= "linksLogs">
              <div className= "logs">
-                <div id="img"><img src="C:\Users\HELEN\Desktop\NavLink\src\assets\p3.jpg" alt="" /></div>
+                <div id="img"><img src={Img} alt="" id="img"/></div>
 
                  <div className= "btn">
-                      <button>Login</button>
-                      <button>Login</button>
+                      <button id="in">Log In</button>
+                      <button id="out">Log Out</button>
                  </div>
              </div>
              <div className= "links">
-                   <Link to ='/'>Home</Link>
-                   <Link to ='/about'>About</Link>
-                   <Link to ='/contact'>Contact</Link>
-                   <Link to ='/settings'>Settings</Link>
+                   <div className= "homLink">
+                         <div id="lind"><Link to ='/' id="linkT">Home</Link ></div>
+                   </div>
+                    <div className= "otherLinks">
+                         <div id="lind"><Link to ='/about' id="linkT">About</Link></div>
+                         <div id="lind"><Link to ='/contact' id="linkT">Contact</Link></div>
+                         <div id="lind"><Link to ='/settings' id="linkT">Settings</Link></div>
+                    </div>
+                  
               </div>
           </div>
         </>

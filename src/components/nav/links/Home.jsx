@@ -1,3 +1,5 @@
+import Login from "../../login/Login";
+import Links from "./Links";
 
 
 
@@ -5,7 +7,11 @@ const Home =()=>{
 
     return(
         <>
-          <h2>This is my Home page</h2>
+          <div className= "home">
+              <Links/>
+              <h2 id="testinT">This is my Home page</h2>
+              <Login/>
+          </div>
         </>
     )
 }

@@ -1,10 +1,14 @@
+import Links from "./Links";
 
 
 const Contact =()=>{
 
     return(
         <>
-          <h2>This is my Contact page</h2>
+            <div className= "contact">
+                <Links/>
+               <h2 id="testinT">This is my Contact page</h2>
+            </div>
         </>
     )
 }
